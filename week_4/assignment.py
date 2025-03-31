@@ -7,6 +7,7 @@ try:
 
     new_filename = "modified_" + filename #Create a varible that stores the filename
 
+    # A new file will be created in the current directory with the modified content
     with open(new_filename, "w") as new_file:
         new_file.write(modified_data) #Write modified version of original file into another file created
     print(f"Modified file saved as '{new_filename}'")
