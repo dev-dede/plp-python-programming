@@ -1,18 +1,17 @@
 # Assignment 2
-class Object:
+class Vehicle:
     def move(self):
         pass
 
-class Car(Object):
+class Car(Vehicle):
     def move(self):
         print(f"Driving")
 
-class Plane(Object):
+class Plane(Vehicle):
     def move(self):
         print("Flying")
 
-plane = Plane()
-plane.move()
-print(f"-------------")
-car = Car()
-car.move()
+vehicles = [Car(), Plane()]
+for v in vehicles:
+    v.move()
+
